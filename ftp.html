@@ -13,7 +13,28 @@
     </header>
 
     <main>
-        <p>This is where your main content goes.</p>
+        <p>File Transfer Protocol (FTP) is an application-layer protocol that is used to transfer files between a client and a server over a TCP/IP network. It provides a standardized 
+            method for file exchange across different systems.</p>
+
+        <h2>Types of Connection in FTP</h2>
+        <h3>1. Control Connection</h3>
+        <p>This connection is used to exchange commands and responses between the client and server.</p>
+        <ul>
+            <li>Established on TCP port 21.</li>
+            <li>Transfers user authentication details (username and password).</li>
+            <li>Sends commands for directory navigation and file operations.</li>
+            <li>Remains active for the entire FTP session.</li>
+        </ul>
+        <h3>2. Data Connection</h3>
+        <p>This connection is used to transfer the actual file content and directory listings.</p>
+        <ul>
+            <li>Traditionally uses TCP port 20 (in active mode).</li>
+            <li>Created separately for each file transfer.</li>
+            <li>Transfers files and directory information.</li>
+            <li>Closes automatically after data transmission completes.</li>
+        </ul>
+        <p>Data types in FTP include: <em>ASCII;EBCDIC; Image; and Local</em></p>
+        <img src="./images/ftp.webp">
     </main>
 
     <footer>
